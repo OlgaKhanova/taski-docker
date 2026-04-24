@@ -90,7 +90,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Set up nodeJS
       # Это готовый воркфлоу для установки Node.js на раннер
       uses: actions/setup-node@v4
@@ -115,7 +115,7 @@ jobs:
     needs: frontend_tests
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
       - name: Login to Docker 
